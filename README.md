@@ -25,32 +25,44 @@ Consumers can **discover local products**, contact local sellers and manager the
 ## 📂 Folder Structure
 ```plaintext
 src/
- ├─ api/                  # API communication (services)
- │   ├─ index.ts           # API config
- │   └─ products.service.ts
+ ├─ api/                  # Funções para comunicação com a API (Axios, fetch, etc.)
+ │   ├─ index.ts           # Configuração base (ex: axios.create)
+ │   └─ user.service.ts    # Exemplo: serviço de usuários
  │
- ├─ assets/               # Static files (images, icons, fonts)
+ ├─ assets/               # Arquivos estáticos (imagens, ícones, fontes)
+ │   ├─ images/
+ │   ├─ icons/
+ │   └─ fonts/
  │
- ├─ components/           # Reusable components
- │   ├─ ui/                # Buttons, Inputs, Modals...
- │   ├─ layout/            # Header, Footer, Sidebar
- │   └─ feedback/          # Toasts, Alerts, Loaders
+ ├─ components/           # Componentes reutilizáveis
+ │   ├─ ui/                # Componentes de UI genéricos (botões, inputs)
+ │   ├─ layout/            # Estrutura de layout (Header, Footer, Sidebar)
+ │   └─ feedback/         # Alertas, Toasts, Loaders
+ │   └─ modal/             # Modais (pop up que parece por cima da página)
+ ├─ hooks/                # Hooks customizados
+ │   └─ useAuth.ts
  │
- ├─ hooks/                # Custom React hooks
+ ├─ lib/                  # Utilitários e bibliotecas internas (formatações, máscaras)
+ │   └─ formatDate.ts
  │
- ├─ lib/                  # Utilities & helpers
+ ├─ pages/               
+ │   └─ Home.tsx
  │
- ├─ pages/                # Application pages
+ ├─ store/                # Gerenciamento de estado (Redux, Zustand, etc.)
+ │   └─ userSlice.ts
  │
- ├─ store/                # State management
+ ├─ styles/               # Estilos globais do Tailwind
+ │   ├─ globals.css
+ │   └─ tailwind.css
  │
- ├─ styles/               # Global Tailwind styles
+ ├─ types/                # Tipos TypeScript globais
+ │   └─ user.d.ts
  │
- ├─ types/                # Global TypeScript types
- │
+ ├─ AppRoutes.tsx
  ├─ App.tsx
  ├─ main.tsx
- └─ vite-env.d.ts
+ └─ vite-env.d.ts / next-env.d.ts
+
 ```
 
 ## 📜 Functional Requirements (FR)
