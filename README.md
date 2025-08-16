@@ -42,7 +42,7 @@ src/
  ├─ hooks/                # Hooks customizados
  │   └─ useAuth.ts
  │
- ├─ lib/                  # Utilitários e bibliotecas internas (formatações, máscaras)
+ ├─ lib/                  # Utilitários e bibliotecas internas (formatações, máscaras) 
  │   └─ formatDate.ts
  │
  ├─ pages/               
